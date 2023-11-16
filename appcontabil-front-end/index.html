@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Login - App Contabil</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-primary">
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <main>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Login - App Contabil</h3></div>
+                                <div class="card-body">
+                                    <form>
+
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="email" name="email" id="email" placeholder="E-mail" onchange="onChangeEmail()" />
+                                            <label for="email">E-mail</label>
+                                            <div class="error" id="email-required-error">Email é obrigatório</div>
+                                            <div class="error" id="email-invalid-error">Email é inválido</div>
+                                        </div>
+
+
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()" />
+                                            <label for="password">Senha</label>
+                                        </div>
+
+                                       
+
+
+                                      
+                                        <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+
+                                            <a class="btn btn-outline-secondary" id="recover-password-button" onclick="recoverPassword()">Recuperar senha</a>
+
+                                            <a class="btn btn-primary" id="login-button" onclick="login()">Login</a>
+                                        </div>
+
+                                       
+
+                                        
+
+                                    </form>
+                                </div>
+                                <div class="card-footer text-center py-3">
+                                    <div class="btn btn-success"><a onclick="register()">Registrar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+    </div>
+    
+   
+</body>
+
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth-compat.js"></script>
+<script src="firebase-init.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+<script src="validations.js"></script>
+<script src="loading.js"></script>
+
+</html>
